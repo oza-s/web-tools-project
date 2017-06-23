@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/security
+						http://www.springframework.org/schema/security/spring-security.xsd 
+						http://www.springframework.org/schema/context 
+						http://www.springframework.org/schema/context/spring-context.xsd ">
+	
+	<context:component-scan base-package="com.neu.*" />
+	<debug/>	
+	<http pattern="/login**" security="none" />			
+	<http auto-config="false" use-expressions="true" disable-url-rewriting="true" authentication-manager-ref="dev">			
+		
+			
+		<intercept-url pattern="/admin**" access="hasAnyRole('ADMIN')" />
+		<intercept-url pattern="/user**" access="hasAnyRole('ROLE_USER')" />
+		<intercept-url pattern="/css/**" access="permitAll" />
+		<intercept-url pattern="/js/**" access="permitAll" />
+		<intercept-url pattern="/images/**" access="permitAll" />
+		<intercept-url pattern="/fonts/**" access="permitAll" />
+		<intercept-url pattern="/login*" access="permitAll" />
+		<intercept-url pattern="/dashboard**" access="ROLE_USER" />	
+		<intercept-url pattern="/**" access="isAuthenticated()" />		
+		
+		<form-login
+			login-page="/login.htm" 
+			default-target-url="/dashboard.htm" 
+			username-parameter="j_username" 
+			password-parameter="j_password" 
+			authentication-failure-url="/login.htm"
+		/>
+		
+		<logout logout-success-url="/" invalidate-session="true" delete-cookies="JSESSIONID" />
+		
+		<session-management session-fixation-protection="newSession" invalid-session-url="/" />
+		
+		<!-- <csrf/> -->
+		
+		<headers>
+			<cache-control/>
+			<xss-protection/>
+			<frame-options policy="SAMEORIGIN"/>
+		</headers>
+		
+	</http>
+	
+	<authentication-manager id="dev">
+		<authentication-provider ref="customAuthenticationProvider"/>
+	</authentication-manager>
+	
+	<!-- <beans:bean id="customAuthProvider" class="com.neu.webtools.security.CustomAuthenticationProvider">
+	<property name="loginDao" ref="loginDao" />
+	</beans:bean> -->
+	
+	<!-- <authentication-manager id="dev"
+		alias="authenticationManager">
+		<authentication-provider>
+			<user-service>
+				<user name="mck" password="pwd" authorities="ROLE_USER" />
+			</user-service>
+		</authentication-provider> -->
+		<!-- <authentication-provider ref="customAuthenticationProvider"></authentication-provider> -->
+		
+	<!-- </authentication-manager> -->
+	
+</beans:beans>

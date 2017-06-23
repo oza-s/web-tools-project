@@ -1,0 +1,678 @@
+body
+{
+	font-size:14px;
+}
+
+.navbar-custom 
+{
+    background-color: rgba(254, 209, 54, 0.8);
+    padding: 10px 0;
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+    border: none;
+}
+
+.navbar-custom .nav li a {
+    font-weight: 900;
+    letter-spacing: 1px;
+
+}
+
+.navbar-custom .nav li a:hover {
+   color:white;
+
+}
+.navbar-custom .nav li a, .navbar-custom .navbar-toggle {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#101010;
+    text-transform: uppercase;
+}
+
+.navbar-custom .navbar-brand {
+    color: #101010;
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+	font-size: 2em;
+}
+
+
+.navbar-custom .navbar-header a:hover 
+{
+    color: white;
+}
+header
+{
+    background-image: url(../Images/Image3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: #000000;
+	height:746px;
+
+	
+}
+header .introDesc {
+    padding-top: 204px;
+    padding-bottom: 200px;
+
+}
+header .introDesc .introHeading {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 57px;
+    line-height: 75px;
+    margin-bottom: 50px;
+}
+.btn-xl {
+    color: #fff;
+    background-color: #fed136;
+    border-color: #fed136;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
+}
+
+header .introDesc .introWelcome {
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+
+
+.building {
+    background-color: #eee;
+	padding: 60px 0px;
+}
+
+.building * {
+    z-index: 2;
+}
+
+.building .buildingItem {
+    margin: 0 0 30px;
+	    right: 0;
+		
+}
+.building .sectionHeading
+{
+	padding:50px;
+	font-size:30px;
+}
+
+.building .buildingItem .buildingLink {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.building .buildingItem .buildingLink .buidingHover .buildingHoverContent:hover{
+	background-color:yellow;
+}
+/*.building .buildingItem .buildingLink .buidingHover  {
+    background: rgba(254,209,54,.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+}
+
+.building .buildingItem .buildingLink .buidingHover .buildingHoverContent {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    top: 50%;
+    margin-top: -12px;
+    color: #fff;
+}
+
+.building .buildingItem .buildingLink .buidingHover .buildingHoverContent i {
+    margin-top: -12px;
+}*/
+
+.building .buildingItem .buildingCaption {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+
+.building .buildingItem img
+{
+	height:275px;
+	width:100%;
+
+}
+
+.building
+{
+	padding:15px 0px;
+}
+footer {
+    padding: 30px;
+	font-weight:bold;
+}
+.list-inline.socialButtons
+{
+	text-align:center;
+}
+
+.list-inline.privacyTerms
+{
+	text-align:right;
+}
+
+.contactUs
+{
+background-image:linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    );
+	color:white;
+	padding:50px;
+}
+.contactUs input.form-control
+{
+	height:55px;
+}
+.contactUs .lblContactUs
+{
+	margin-bottom:60px;
+	font-weight: bold;
+}
+/*.text-center{
+	text-align:center;
+	}*/
+.btnSumbit{
+	 color: #fff;
+    background-color: #fed136;
+    border-color: #fed136;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
+}
+
+
+.glyphicon.glyphicon-globe 
+{
+    font-size: 75px;
+}
+
+
+.team .teamHeading
+{
+	    padding: 50px;
+}
+
+.team .teamMember img
+{
+	width:50%; 
+	margin : auto;
+	padding:50px 0px;
+}
+
+.team .teamMember .socialButtons
+{
+	font-size:25px;
+	text-align: -webkit-center;
+	padding-bottom:75px;
+	color:black;
+}
+
+.team .teamMember .socialButtons .fa
+{
+	color:black;
+}
+
+.floorView
+{
+	background-image: url(../Images/Image3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	padding:100px;
+}
+
+.floorViewContainer
+{
+	background-color:rgba(48, 47, 47, 0.6);
+	padding:100px;
+	
+}
+/*hayden hall*/
+.floorViewContainer .haydenFloorViewTable
+{
+
+	text-align:center;
+}
+
+.floorViewContainer .haydenFloorViewTable .harow1 
+{
+	height:200px;
+}
+.floorViewContainer .haydenFloorViewTable .harow2 
+{
+	height:50px;
+}
+.floorViewContainer .haydenFloorViewTable .harow3 
+{
+	height:220px;
+}
+
+.floorViewContainer .haydenFloorViewTable .harow4 
+{
+	height:200px;
+}
+.floorViewContainer .haydenFloorViewTable .harow5 
+{
+	height:100px;
+}
+
+.floorViewContainer .haydenFloorViewTable .harow1 #hacol11
+{
+	width: 150px;
+	border:none;
+}
+
+.floorViewContainer .haydenFloorViewTable .harow1 #hacol12
+{
+	width: 150px;
+	background-color: rgb(254, 209, 54);
+	border:black solid 1px;
+}
+.floorViewContainer .haydenFloorViewTable .harow1 .hacol3-8
+{
+	width: 500px;
+	border:black solid 1px;
+	background-color:rgb(254, 209, 54);
+}
+.floorViewContainer .haydenFloorViewTable .harow1 #hacol19
+{
+	width: 200px;
+	border:none;
+}
+.floorViewContainer .haydenFloorViewTable .harow2 #hacol21
+{
+	width: 150px;
+	border:none;
+	
+}
+
+.floorViewContainer .haydenFloorViewTable .harow2 #hacol22
+{
+	background-color:white;
+
+}
+.floorViewContainer .haydenFloorViewTable .harow2 #hacol23
+{
+	width: 200px;
+	background-color: rgb(254, 209, 54);
+	border:black solid 1px;
+}
+.floorViewContainer .haydenFloorViewTable .harow3 .harow3col1-9
+{
+	width: 200px;
+	background-color:rgb(254, 209, 54);
+	border:black solid 1px;
+}
+
+.floorViewContainer .haydenFloorViewTable .hallway #hahallway
+{
+	background-color:white;
+}
+.floorViewContainer .haydenFloorViewTable .harow4 #hacol41
+{
+	background-color:white;
+	border:none;
+}
+
+
+.floorViewContainer .haydenFloorViewTable .harow4 .harow4col2-8
+{
+	width: 200px;
+	background-color: rgb(254, 209, 54);
+	border:black solid 1px;
+}
+
+
+.floorViewContainer .haydenFloorViewTable .harow5 .harow5col1-9
+{
+	width: 300px;
+	background-color:rgb(254, 209, 54);
+	border:black solid 1px;
+}
+
+/*hayden hall*/
+
+/*dodgeHall*/
+.floorViewContainer .dodgeFloorViewTable
+{
+	text-align:center;
+}
+.floorViewContainer .dodgeFloorViewTable .dorow1 
+{
+	height:100px;
+}
+.floorViewContainer .dodgeFloorViewTable .dorow2 
+{
+	height:50px;
+}
+
+.floorViewContainer .dodgeFloorViewTable .dorow3 
+{
+	height:200px;
+}
+.floorViewContainer .dodgeFloorViewTable .dorow4 
+{
+	height:50px;
+}
+.floorViewContainer .dodgeFloorViewTable .dorow5 
+{
+	height:300px;
+}
+
+.floorViewContainer .dodgeFloorViewTable .dorow1 .dorow1col1-9
+{
+	width: 200px;
+	background-color:rgb(254, 209, 54);
+	border:black solid 1px;
+}
+.floorViewContainer .dodgeFloorViewTable .dorow2 .dorow2col1-9
+{
+	
+	background-color:white;
+	border:black solid 1px;
+	border-bottom:none;
+	border-left:none;
+}
+.floorViewContainer .dodgeFloorViewTable .dorow3 .dorow3col2-9
+{
+	width: 200px;
+	background-color:rgb(254, 209, 54);
+	border:black solid 1px;
+}
+.floorViewContainer .dodgeFloorViewTable .dorow3 #docol31
+{
+	width: 200px;
+	background-color:white;
+	border:none;
+}
+.floorViewContainer .dodgeFloorViewTable .dorow4 .dorow4col1-9
+{
+	
+	background-color:white;
+	border:none;
+	
+}
+
+.floorViewContainer .dodgeFloorViewTable .dorow5 .dorow5col1-9
+{
+	width: 300px;
+	background-color:rgb(254, 209, 54);
+	border:black solid 1px;
+}
+/*dodgeHall*/
+/*Shillman Hall*/
+.floorViewContainer .shillmanFloorViewTable
+{
+	text-align:center;
+}
+.floorViewContainer .shillmanFloorViewTable .shrow1 
+{
+	height:225px;
+}
+.floorViewContainer .shillmanFloorViewTable .shrow2 
+{
+	height:75px;
+}
+
+.floorViewContainer .shillmanFloorViewTable .shrow3 
+{
+	height:230px;
+}
+.floorViewContainer .shillmanFloorViewTable .shrow1 .shrow1col1-7
+{
+	width: 225px;
+	background-color:rgb(254, 209, 54);
+	border:black solid 1px;
+}
+.floorViewContainer .shillmanFloorViewTable .shrow1 #shcol18
+{
+	
+	background-color:white;
+	border-bottom:none;
+}
+.floorViewContainer .shillmanFloorViewTable .shrow2 #shcol21
+{
+	
+	background-color:white;
+	border:none;
+}
+.floorViewContainer .shillmanFloorViewTable .shrow2 #shcol22
+{
+	
+	background-color:white;
+	border:none;
+}
+.floorViewContainer .shillmanFloorViewTable .shrow2 #shcol23
+{
+	
+	background-color:rgb(254, 209, 54);
+	border:black solid 1px;
+}
+.floorViewContainer .shillmanFloorViewTable .shrow3 .shrow3col1-7
+{
+	width: 225px;
+	background-color:rgb(254, 209, 54);
+	border:black solid 1px;
+
+}
+.floorViewContainer .shillmanFloorViewTable .shrow3 #shcol38
+{
+	
+	background-color:white;
+	border-bottom:none;
+}
+
+
+
+/*Shillman Hall*/
+
+/*snell*/
+.floorViewContainer .snellFloorViewTable
+{
+
+	text-align:center;
+}
+
+.floorViewContainer .snellFloorViewTable .snrow1 
+{
+	height:200px;
+}
+.floorViewContainer .snellFloorViewTable .snrow2 
+{
+	height:50px;
+}
+.floorViewContainer .snellFloorViewTable .snrow3 
+{
+	height:220px;
+}
+
+.floorViewContainer .snellFloorViewTable .snrow4 
+{
+	height:200px;
+}
+.floorViewContainer .snellFloorViewTable .snrow5 
+{
+	height:100px;
+}
+
+.floorViewContainer .snellFloorViewTable .snrow1 #sncol11
+{
+	width: 150px;
+	border:none;
+}
+
+.floorViewContainer .snellFloorViewTable .snrow1 #sncol12
+{
+	width: 150px;
+	background-color: rgb(254, 209, 54);
+	border:black solid 1px;
+}
+.floorViewContainer .snellFloorViewTable .snrow1 .sncol3-8
+{
+	width: 500px;
+	border:black solid 1px;
+	background-color:rgb(254, 209, 54);
+}
+.floorViewContainer .snellFloorViewTable .snrow1 #sncol19
+{
+	width: 200px;
+	border:none;
+}
+.floorViewContainer .snellFloorViewTable .snrow2 #sncol21
+{
+	width: 150px;
+	border:none;
+	
+}
+
+.floorViewContainer .snellFloorViewTable .snrow2 #sncol22
+{
+	background-color:white;
+	border:1px solid white;
+}
+.floorViewContainer .snellFloorViewTable .snrow2 #sncol23
+{
+	width: 200px;
+	background-color: rgb(254, 209, 54);
+	border:black solid 1px;
+}
+.floorViewContainer .snellFloorViewTable .snrow3 .snrow3col1-9
+{
+	width: 200px;
+	background-color:rgb(254, 209, 54);
+	border:black solid 1px;
+}
+
+.floorViewContainer .snellFloorViewTable .hallway #snhallway
+{
+	background-color:white;
+	border:1px solid white;
+}
+.floorViewContainer .snellFloorViewTable .snrow4 #sncol41
+{
+	background-color:white;
+	border:none;
+}
+.floorViewContainer .snellFloorViewTable .snrow3 #sncol38 
+{
+	background-color:white;
+	border:1px white solid;
+}
+
+
+.floorViewContainer .snellFloorViewTable .snrow4 .snrow4col2-8
+{
+	width: 200px;
+	background-color: rgb(254, 209, 54);
+	border:black solid 1px;
+}
+
+
+.floorViewContainer .snellFloorViewTable .snrow5 .snrow5col1-9
+{
+	width: 300px;
+	background-color:rgb(254, 209, 54);
+	border:black solid 1px;
+}
+
+/*snell*/
+
+.btn-warning{
+background-color:rgba(254, 209, 54, 0.8);	
+}
+
+.modal-body{
+	padding:25px;
+border-top:1px solid rgba(254, 209, 54, 0.8);
+}
+
+.modal-footer{
+	border-top:1px solid rgba(254, 209, 54, 0.8);
+}
+
+
+
+.aboutUs{
+	padding-top:80px;
+	
+}
+.aboutUsSection{
+background-color:#eee;
+padding-bottom:80px;
+}
+.imgCircleAboutUs {
+    border-radius: 50%;
+	width:200px;
+	height:200px;
+}
+.imgCenter{
+width: 170px;
+    height: 170px;
+    margin-left: -85px;
+}
+
+.newRow{
+	padding-top:80px;
+}
+
+.aboutUsTextRight{
+	text-align:right;
+}
+.aboutUsTextLeft{
+	padding-left:50px;
+	text-align:left;
+}
+.floorForm{
+	
+	
+	padding:50px;
+	color:#FFFFFF;
+}
+
+.btnSuccessFloor{
+	margin-top:30px;
+}
+
+.divider {
+position: relative;
+border-bottom: 1px solid #f0f0f0;
+margin-bottom: 30px;
+margin-top: 30px; }
+
+.introDesc .introWelcome { transition: all .5s ease-in-out; }
+.introDesc .introWelcome:hover { transform: scale(1.1); }
+
+.introDesc .introHeading { transition: all .5s ease-in-out; }
+.introDesc .introHeading:hover { transform: scale(1.1); }
+
+.building .img-responsive { transition: all .5s ease-in-out; }
+.building .img-responsive:hover { transform: scale(1.1); }

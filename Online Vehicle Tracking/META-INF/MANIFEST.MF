@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OnlineVehicleTracking
+Bundle-SymbolicName: OnlineVehicleTracking
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: OnlineVehicleTracking.jar
+Export-Package: com.neu.webtools.beans
+Import-Package: org.springframework.web.servlet
