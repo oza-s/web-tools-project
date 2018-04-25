@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/RentACar.war
+web: java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT RentACar.war
