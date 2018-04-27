@@ -48,7 +48,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider
 			
 			}
 			System.out.println("CustomAuthenticationProvider / authenticate : user authenticated");
-			auth = new UsernamePasswordAuthenticationToken(name, password, grantedAuths);
+			auth = new UsernamePasswordAuthenticationToken(user, password, grantedAuths);
 			return auth;
 		}
 		return null;

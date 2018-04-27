@@ -42,7 +42,7 @@ public class Car
 	@Column(name="purchaseYear")
 	public Date purchaseYear;
 	
-	@Column(name="price")
+	@Column(name="price", nullable=true)
 	public float price;
 	
 	@Column(name="perHourRate")

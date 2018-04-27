@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.Email;
@@ -13,6 +14,7 @@ import org.apache.commons.mail.SimpleEmail;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
@@ -45,7 +47,7 @@ public class TradeInController
 		{
 			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd"); //yyyy-MM-dd'T'HH:mm:ssZ example
 	        dateFormat.setLenient(true);
-	        binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true)); //true becauseit alows empty values
+	        binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true)); //true because it allows empty values
 		}
 		catch(Exception exp)
 		{
@@ -136,6 +138,10 @@ public class TradeInController
 	public ModelAndView redirectdashboard(HttpServletRequest request)
 	{	
 		System.out.println("Inside dashboard");
+		User user = (User)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		HttpSession session = request.getSession();
+		session.setAttribute("userSession", user);
+		System.out.println(user);
 		return new ModelAndView("dashboard");
 	}
 

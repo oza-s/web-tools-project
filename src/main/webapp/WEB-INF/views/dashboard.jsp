@@ -8,6 +8,7 @@
     response.setDateHeader("Expires", 0); //Causes the proxy cache to see the page as "stale"
     response.setHeader("Pragma","no-cache"); //HTTP 1.0 backward compatibility
     User user = (User) session.getAttribute("userSession");
+    System.out.println("User in jsp: " + user);
     if (null == user) {
        request.setAttribute("Error", "Session has ended.  Please login.");
        RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
@@ -45,10 +46,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="sectionHeading">${sessionScope.userSession.firstName} ${sessionScope.userSession.lastName} Dashboard</h2>
+                    <h2 class="sectionHeading">${sessionScope.userSession.firstName} ${sessionScope.userSession.lastName} Dashboard | 
+                    <c:if test="${sessionScope.userSession.role == 'ROLE_ADMIN'}">
+                    	<b>This is ADMIN PORTAL</b>
+                    </c:if>
+                    </h2>
                 </div>
             </div>
+            
             <div class="row">
+            <c:if test="${sessionScope.userSession.role == 'ROLE_ADMIN'}">
                 <div class="col-md-4 col-sm-6 buildingItem">
                     <a href="trade-in.htm" class="buildingLink">
                        <div class="buildingHoverContent">
@@ -57,9 +64,11 @@
                         <img src="http://blog.quizzle.com/wp-content/uploads/2014/06/get-the-most-money-when-selling-or-trading-in-your-car.jpg" class="img-responsive" alt="Hayden Hall">
                     </a>
                     <div class="buildingCaption">
-                        <h4>Trade-In your Car</h4>
+                        <h4>Trade-In Car</h4>
                     </div>
                 </div>
+            </c:if>
+            
                 <div class="col-md-4 col-sm-6 buildingItem">
                     <a href="rent-home-page.htm" class="buildingLink">
                        
@@ -70,11 +79,11 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 buildingItem">
-                    <a href="locate.htm" class="buildingLink">
+                    <a href="location-dashboard.htm" class="buildingLink">
                         <img src="images/locateacar.jpg" class="img-responsive" alt="Shillman Hall">
                     </a>
                     <div class="buildingCaption">
-                        <h4>Locate my CAR</h4>
+                        <h4>Locate CAR</h4>
                     </div>
                 </div>
             </div>

@@ -58,7 +58,7 @@ public class LoginController
 		user.setPassword(password);
 		user.setEmailId(emailId);
 		user.setPhoneNo(phoneNo);
-		user.setRole(Constants.NORMAL_USER);
+		user.setRole(Constants.ROLE_USER);
 		
 		boolean isUser = loginDao.registerUser(user);
 		return new ModelAndView("login");
