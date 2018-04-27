@@ -15,7 +15,7 @@
 		<property name="password" value="passw0rd" /> -->		
 		
 		<!-- HEROKU DATABASE Config -->
-		<property name="url" value="mysql://us-cdbr-iron-east-05.cleardb.net/heroku_2e306773851d685?reconnect=true" />
+		<property name="url" value="jdbc:mysql://us-cdbr-iron-east-05.cleardb.net/heroku_2e306773851d685?reconnect=true" />
 		<property name="username" value="b7c5d5c1defaa9" />
 		<property name="password" value="27b4277c" />
 		

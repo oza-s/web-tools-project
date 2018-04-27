@@ -35,7 +35,6 @@ public class LoginDao implements ILoginDao
 		Query query = session.createQuery(hqlQuery);
 		query.setParameter("username", username);
 		query.setParameter("password", password);
-		
 		session.beginTransaction();
 		User user = (User)query.uniqueResult();
 		session.flush();
