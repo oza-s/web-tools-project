@@ -53,7 +53,7 @@
                     </h2>
                 </div>
             </div>
-            
+           
             <div class="row">
             <c:if test="${sessionScope.userSession.role == 'ROLE_ADMIN'}">
                 <div class="col-md-4 col-sm-6 buildingItem">
