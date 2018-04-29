@@ -7,7 +7,6 @@
 <title>Online Vehicle Tracking</title>
 </head>
 <body>
-
 <%System.out.println("Inside index"); %>
 <% response.sendRedirect(request.getContextPath()+ "/login.htm"); %>
 </body>
